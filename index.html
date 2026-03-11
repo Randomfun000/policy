@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TikTok Authorization</title>
+</head>
+
+<body>
+<h2>TikTok Authorization Successful</h2>
+
+<p>You can close this page.</p>
+
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const code = urlParams.get('code');
+
+document.write("<p>Authorization code received.</p>");
+document.write("<p>Code: " + code + "</p>");
+</script>
+
+</body>
+</html>
